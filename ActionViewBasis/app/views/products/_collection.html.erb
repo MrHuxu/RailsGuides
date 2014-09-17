@@ -1,0 +1,9 @@
+<% @greeting = capture do %>
+  <p>Welcome! The data and time is <%= Time.now %></p>
+<% end %>
+
+<% content_for :special_script do %>
+  <script type="text/javascript" charset="utf-8">
+    alert('Hello!')
+  </script>
+<% end %>
